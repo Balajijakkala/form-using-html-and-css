@@ -1,0 +1,99 @@
+* {
+  @import url("https://fonts.cdnfonts.com/css/division-one");
+  font-family: "Division One", sans-serif;
+}
+body {
+  background-color: rgba(238, 154, 9, 0.362);
+  color: rgb(242, 67, 4);
+}
+form {
+  width: 500px;
+}
+fieldset {
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+input:required {
+  border: 2px solid black;
+}
+
+input:optional {
+  border: 3px dashed rgb(13, 224, 59);
+}
+
+input:read-only {
+  background-color: rgb(116, 176, 236);
+  color: white;
+}
+
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+
+input[type="radio"]:checked + label {
+  color: black;
+}
+input[type="submit"] {
+  border: 3px solid rgb(95, 15, 192);
+  border-radius: 13px;
+}
+input[type="reset"] {
+  border: 3px solid rgb(95, 15, 192);
+  border-radius: 13px;
+}
+
+select {
+  background-color: rgb(206, 241, 7);
+  border-radius: 13px;
+  cursor: pointer;
+}
+input:focus {
+  background-color: rgba(238, 154, 9, 0.362);
+}
+input[type="text"] + p {
+  display: none;
+}
+input[type="text"]:hover + p {
+  display: inline;
+  color: rgb(13, 210, 157);
+}
+input[type="tel"] + p {
+  display: none;
+}
+input[type="tel"]:hover + p {
+  display: inline;
+  color: rgb(13, 210, 157);
+}
+input[type="email"] + p {
+  display: none;
+}
+input[type="email"]:hover + p {
+  display: inline;
+  color: rgb(13, 210, 157);
+}
+input[type="password"] + p {
+  display: none;
+}
+input[type="password"]:hover + p {
+  display: inline;
+  color: rgb(13, 210, 157);
+}
+img {
+  display: none;
+}
+
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+fieldset:hover{
+  box-shadow: 0px 25px 100px white;
+}
