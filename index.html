@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>
+          <h3><strong>>Personal Information</strong></h3>
+        </legend>
+        <table>
+          <tr>
+            <td><label for="">Name</label></td>
+            <td>
+              <input type="text" required placeholder="Eg: balaji" />
+              <p>Enter Your Name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Surname</label></td>
+            <td><input type="text" placeholder="Eg: jakkala" />
+              <p>Enter Your Surname</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile Number</label></td>
+            <td><input type="tel" required placeholder="Eg: 7372856890" />
+              <p>Enter Your Number</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td>
+              <input type="email" required placeholder="Eg: balu@gmail.com" />
+              <p>Enter Your Email</p>
+              <img id="valid" src="ok.jpg" alt="" />
+              <img id="invalid" src="no.jpg" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Password</label></td>
+            <td>
+              <input
+                type="password"
+                required
+                placeholder=" Eg: min 8 characters"
+              />
+              <p>Enter The Password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                required
+                placeholder="Eg: min 8 characters"
+              />
+              <p>Enter The Password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">DOB</label></td>
+            <td><input type="date" required /></td>
+          </tr>
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+              <input type="radio" name="Gender" required /><label for=""
+                >Male</label
+              >
+              <input type="radio" required name="Gender" /><label for=""
+                >Female</label
+              >
+              <input type="radio" required name="Gender" /><label for=""
+                >Others</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Country</label></td>
+            <td>
+              <select name="" id="" required>
+                <option value="">India</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">Canada</option>
+                <option value="">Australia</option>
+                <option value="">Germany</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Uplode Image</label></td>
+            <td>
+              <input type="file" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3><strong>Course Details</strong></h3>
+        </legend>
+        <table>
+          <tr>
+            <td><label for="">Select Course</label></td>
+          </tr>
+          <tr>
+            <td>
+              <select name="" id="" required>
+                <option value="">Java Full Stack</option>
+                <option value="">Python Full Stack</option>
+                <option value="">Cloud Computing</option>
+                <option value="">Cybersecurity</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Delivery Mode</label></td>
+            <td>
+              <input type="radio" name="Gender" required /><label for=""
+                >Online</label
+              >
+              <input type="radio" name="Gender" required /><label for=""
+                >Offline</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Comments</label></td>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                name="comment"
+                placeholder="Type your Comments..."
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
